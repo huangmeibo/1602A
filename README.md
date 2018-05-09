@@ -1,3 +1,3 @@
 # 1602A
 >git 
-- 初始化 
+- zhangyao
