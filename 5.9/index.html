@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/swiper-4.1.6.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<script src="js/flexible.js"></script>
+
+<body>
+    <div class="wrap">
+        <header>
+            <span>北京</span>
+            <h3>假日旅行</h3>
+            <span></span>
+        </header>
+        <section>
+            <div class="box">
+                <div class="swiper-container banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/1.png" alt=""></div>
+                    </div>
+                    <div class="swiper-scrollbar scrollbar"></div>
+                </div>
+                <div class="list">
+                    <div class="cont">
+                        <!-- <dl>
+                            <dt><img src="img/2.png" alt=""></dt>
+                            <dd>
+                                <h4>北京首都机场国际酒店</h4>
+                                <p class="p1"><span class="sp1">限时抢购</span><span class="sp2">￥268 <b>起</b></span></p>
+                                <p><b>4.3分</b><b>四星级</b><b>P</b> </p>
+                                <p class="p1"><b>首都机场.新国展</b> <b class="b1">23.2公里</b></p>
+                                <em>></em>
+                            </dd>
+                        </dl> -->
+                        <p>lalal</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bscroll.min.js"></script>
+    <script src="js/swiper-4.1.6.min.js"></script>
+    <script>
+        var swiper = new Swiper('.banner', {
+            autoplay: true,
+            loop: true,
+
+            disableOnInteraction: false,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+        var iscroll = new BScroll('.list', {
+            click: true
+        })
+
+        ajax();
+
+        function ajax() {
+            $.ajax({
+                url: "./data/data.json",
+                success: function(data) {
+                    var html = '';
+                    $.each(data, function(i, v) {
+                        if (v.btn) {
+                            html += `<dl data-id="${v.id}">
+                            <dt><img src="${v.img}" alt=""></dt>
+                            <dd>
+                                <h4>${v.title}</h4>
+                                <p class="p1"><span class="sp1">${v.btn}</span><span class="sp2">￥${v.pic}<b>起</b></span></p>
+                                <p><b class="pf">${v.pf}分</b><b>${v.xj}</b><b>P</b> </p>
+                                <p class="p1"><b>${v.add}</b> <b class="b1">${v.live}公里</b></p>
+                                <em>></em>
+                            </dd>
+                        </dl>`
+                        } else {
+                            html += `<dl data-id="${v.id}">
+                            <dt><img src="${v.img}" alt=""></dt>
+                            <dd>
+                                <h4>${v.title}</h4>
+                                <p class="p1"><span class="sp1"></span><span class="sp2">￥${v.pic}<b>起</b></span></p>
+                                <p><b class="pf">${v.pf}分</b><b>${v.xj}</b><b>P</b> </p>
+                                <p class="p1"><b>${v.add}</b> <b class="b1">${v.live}公里</b></p>
+                                <em>></em>
+                            </dd>
+                        </dl>`
+                        }
+                    })
+                    $(".cont").append(html);
+                    iscroll.refresh();
+                }
+            })
+        }
+        $(".cont").on("click", "dl", function() {
+            var val = $(this).attr('data-id');
+            var name = $(this).find('h4').text();
+            var val = $(this).find('.pf').text();
+            location.href = `shop.html?names=${name}&num=${val}`;
+        })
+    </script>
+</body>
+
+</html>
