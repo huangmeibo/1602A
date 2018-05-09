@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
 </head>
 <body>
     <div class="wrap">
@@ -15,8 +16,13 @@
             <h3>假日旅行</h3>
             <span>北京</span>
         </header>
-        <div class="banner">
-            <img src="./images/banner_02.gif" alt="">
+        <div class="swiper-containner banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/banner_02.gif" alt=""></div>
+                <div class="swiper-slide"><img src="./images/banner_01.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/banner_03.png" alt=""></div>
+            </div>
+            <div class="swiper-scrollbar"></div>
         </div>
         <main class="main">
             <ul class="ul">
@@ -63,8 +69,13 @@
             </ul>
         </main>
     </div>
+    <script src='./js/swiper-3.4.2.min.js'></script>
     <script>
         document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
+		var myswiper = new Swiper('.banner', {
+            loop: true,
+            autoplay: 1000 
+        })
     </script>
 </body>
 </html>
