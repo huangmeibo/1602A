@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + "px";
+    </script>
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <span>北京</span>
+            <span class="sp2">假日旅行</span>
+            <span></span>
+        </header>
+        <nav class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="5.jpg" alt="">
+                </div>
+            </div>
+        </nav>
+        <main>
+            <ol class="swiper-pagination ol"></ol>
+            <div class="just swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="text">
+                            <dl>
+                                <dt><img src="11.jpg" alt=""></dt>
+                                <dd>
+                                    <h2>北京首都机场国际酒店</h2>
+                                    <button>限时抢购</button>
+                                    <p>4.3分 四星级 </p>
+                                    <p><span>首都国际机场.新国展</span><span>23.2公里</span></p>
+                                </dd>
+                                <span>￥268起</span>
+                            </dl>
+                            <dl>
+                                <dt><img src="12.jpg" alt=""></dt>
+                                <dd>
+                                    <h2>北京首都机场国际酒店</h2>
+                                    <button>限时抢购</button>
+                                    <p>4.3分 四星级 </p>
+                                    <p><span>首都国际机场.新国展</span><span>23.2公里</span></p>
+                                </dd>
+                                <span>￥268起</span>
+                            </dl>
+                            <dl>
+                                <dt><img src="11.jpg" alt=""></dt>
+                                <dd>
+                                    <h2>北京首都机场国际酒店</h2>
+                                    <button>限时抢购</button>
+                                    <p>4.3分 四星级 </p>
+                                    <p><span>首都国际机场.新国展</span><span>23.2公里</span></p>
+                                </dd>
+                                <span>￥268起</span>
+                            </dl>
+                            <dl>
+                                <dt><img src="12.jpg" alt=""></dt>
+                                <dd>
+                                    <h2>北京首都机场国际酒店</h2>
+                                    <button>限时抢购</button>
+                                    <p>4.3分 四星级 </p>
+                                    <p><span>首都国际机场.新国展</span><span>23.2公里</span></p>
+                                </dd>
+                                <span>￥268起</span>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">2</div>
+                    <div class="swiper-slide">3</div>
+                    <div class="swiper-slide">4</div>
+                    <div class="swiper-slide">5</div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <script src="swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('nav', {
+            autoplay: true,
+        })
+        var mySwiper2 = new Swiper('.just', {
+            pagination: {
+                el: '.ol',
+                clickable: true
+            },
+
+        })
+    </script>
+</body>
+
+</html>
