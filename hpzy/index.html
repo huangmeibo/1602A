@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1,minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telphone=no, email=no,address=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/swiper-4.2.2.min.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <span class='first'>北京</span>
+            <span>假日旅行</span>
+            <span></span>
+        </header>
+        <section>
+            <div class="swiper-container main">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/pic1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/pic2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/pic3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/pic4.jpg" alt=""></div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="content">
+                <dl>
+                    <dt><img src="img/dt1.png" alt=""></dt>
+                    <dd>
+                        <h3>北京首都机场国际酒店</h3>
+                        <h5><span>限时抢购</span><em><b>￥268</b>起</em></h5>
+                        <h4>4.3分 <span>四星级</span> <i class="icon iconfont icon-WIFI"></i> <em>p</em></h4>
+                        <p> <i class="icon iconfont icon-dizhi-01"></i>首都机场、新国展<span>23.2公里</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/dt2.png" alt=""></dt>
+                    <dd>
+                        <h3>北京首都机场国际酒店</h3>
+                        <h5><em><b>￥268</b>起</em></h5>
+                        <h4>4.3分 <span>四星级</span> <em>p</em></h4>
+                        <p> <i class="icon iconfont icon-dizhi-01"></i>首都机场、新国展<span>23.2公里</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/dt1.png" alt=""></dt>
+                    <dd>
+                        <h3>北京首都机场国际酒店</h3>
+                        <h5><span>限时抢购</span><em><b>￥268</b>起</em></h5>
+                        <h4>4.3分 <span>四星级</span> <i class="icon iconfont icon-WIFI"></i> <em>p</em></h4>
+                        <p> <i class="icon iconfont icon-dizhi-01"></i>首都机场、新国展<span>23.2公里</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/dt2.png" alt=""></dt>
+                    <dd>
+                        <h3>北京首都机场国际酒店</h3>
+                        <h5><em><b>￥268</b>起</em></h5>
+                        <h4>4.3分 <span>四星级</span> <em>p</em></h4>
+                        <p> <i class="icon iconfont icon-dizhi-01"></i>首都机场、新国展<span>23.2公里</span></p>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="js/swiper-4.2.2.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.main', {
+        loop: true,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        // speed: 1000,
+        // autoplay: {
+        //     delay: 1000
+        // },
+    });
+    mySwiper.scrollbar.$dragEl.css('background', '#46D264');
+</script>
+
+</html>

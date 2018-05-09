@@ -1,0 +1,151 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: .14rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "微软雅黑";
+}
+
+body {
+    min-width: 320px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 625%;
+}
+
+img,
+div,
+body,
+html,
+ul,
+li,
+a {
+    -webkit-touch-callout: none;
+}
+
+input,
+button {
+    outline: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #999;
+}
+
+html,
+body,
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #CCCCCC;
+    header {
+        width: 100%;
+        height: .5rem;
+        line-height: .5rem;
+        background: #46D264;
+        color: #fff;
+        display: flex;
+        span {
+            flex: 1;
+            font-size: .25rem;
+        }
+        .first {
+            font-size: .14rem;
+            margin-left: .1rem;
+        }
+    }
+    section {
+        width: 100%;
+        flex: 1;
+        overflow-y: scroll;
+        .main {
+            width: 100%;
+            height: 1.2rem;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .content {
+            width: 100%;
+            margin-top: .1rem;
+            background: #fff;
+            dl {
+                width: 100%;
+                height: 1rem;
+                border-bottom: 1px solid #EAEAEA;
+                position: relative;
+                dt {
+                    position: absolute;
+                    top: .2rem;
+                    left: .2rem;
+                    width: .6rem;
+                    height: .6rem;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                dd {
+                    position: absolute;
+                    top: .1rem;
+                    left: .9rem;
+                    h3 {
+                        font-size: .18rem;
+                    }
+                    h5 {
+                        position: relative;
+                        span {
+                            display: inline-block;
+                            background: #FF9900;
+                            color: #FFEACB;
+                            font-size: .12rem;
+                            padding: .03rem .02rem;
+                        }
+                        em {
+                            position: absolute;
+                            right: -.2rem;
+                            top: .05rem;
+                            b {
+                                color: #FF9900;
+                                font-size: .18rem;
+                            }
+                        }
+                    }
+                    h4 {
+                        margin-top: .05rem;
+                    }
+                    p {
+                        span {
+                            margin-left: .2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
