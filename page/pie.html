@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas class="can" width="400" height="400" style="border:1px solid #000;"></canvas>
+    <script src="./data.js"></script>
+    <script>
+        //求综合
+        var sum = 0;
+        data.map(function(v, i) {
+            sum += v.value;
+        });
+
+
+        //起始弧度 终止弧度
+        var r = 100;
+        var ctx = document.querySelector('.can').getContext('2d');
+        var deg = Math.PI / 180;
+        var start = 0;
+        data.map(function(v, i) {
+            var end = start + v.value / sum * 360;
+            start = draw(start, end, v.color);
+        });
+
+        function draw(start, end, color) {
+            var init = start;
+            Aarc();
+
+            function Aarc() {
+                init++;
+                if (init < end) {
+                    requestAnimationFrame(Aarc);
+                };
+                //ctx.clearRect(0, 0, 400, 400);
+                ctx.beginPath();
+                ctx.moveTo(200, 200);
+                ctx.arc(200, 200, r, start * deg, init * deg);
+                ctx.fillStyle = color;
+                ctx.fill();
+            };
+            //定义动画
+            return end;
+        }
+    </script>
+</body>
+
+</html>
