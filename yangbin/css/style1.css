@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html,
+body,
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 6rem;
+    position: relative;
+}
+
+.header img {
+    width: 100%;
+    height: 100%;
+}
+
+.header .a {
+    width: .8rem;
+    height: .8rem;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 100%;
+    position: absolute;
+    top: .2rem;
+    left: .2rem;
+    color: #Fff;
+    text-align: center;
+    line-height: .8rem;
+}
+
+.header .a span {
+    font-size: .5rem;
+}
+
+.header .b {
+    width: .8rem;
+    height: .8rem;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 100%;
+    position: absolute;
+    top: .2rem;
+    right: .2rem;
+    color: #Fff;
+    text-align: center;
+    line-height: .8rem;
+}
+
+.header .b span {
+    font-size: .5rem;
+}
+
+.header canvas {
+    position: absolute;
+    bottom: .2rem;
+    right: .2rem;
+}
+
+.h5 {
+    width: 90%;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.h5 p {
+    font-size: .5rem;
+}
+
+.h5 span {
+    color: #ccc;
+}
+
+.main {
+    width: 90%;
+    height: 2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: .01rem solid #ccc;
+    border-bottom: .01rem solid #ccc;
+}
+
+.main p {
+    text-align: center;
+}
+
+.main p:first-child {
+    padding-top: .2rem;
+}
+
+.main p:last-child {
+    line-height: 3;
+}
+
+.main p:last-child span {
+    font-size: .5rem;
+}
+
+.main p:first-child span:last-child {
+    color: #ccc;
+    line-height: 3;
+}
+
+.dl {
+    width: 100%;
+    height: 2rem;
+    border-bottom: .1rem solid #ccc;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dl .le {
+    flex: .7;
+    display: flex;
+    line-height: 3;
+    text-align: center;
+}
+
+.dl .le dl {
+    flex: 1;
+}
+
+.dl .ri {
+    flex: .3;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.border {
+    width: 90%;
+    margin: 0 auto;
+    height: 1.2rem;
+    display: flex;
+    line-height: 1.2rem;
+    justify-content: space-between;
+}
+
+.border span:last-child {
+    color: orange;
+}
+
+.footer {
+    width: 90%;
+    height: 2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #ccc;
+}
+
+.footer p:first-child span:first-child {
+    font-size: .4rem;
+    color: #000;
+}
+
+.footer p:last-child span {
+    display: inline-block;
+    width: 2rem;
+    height: .6rem;
+    background: orange;
+    color: #fff;
+    border-radius: 20px;
+    line-height: .6rem;
+    text-align: center;
+}

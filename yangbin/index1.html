@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <img src="img/a.jpg" alt="">
+            <p class="a"><span class="iconfont icon-chevron-thin-left"></span></p>
+            <p class="b"><span class="iconfont icon-infenicon18"></span></p>
+            <canvas id="canvas" width="150" height="150"></canvas>
+        </div>
+
+        <div class="h5">
+            <p>北京首都国际酒店</p>
+            <span>查看1944条评论 ></span>
+        </div>
+
+        <div class="main">
+            <p>
+                <span>罗湖区春风库66号庐山大厦B座  <br> （春风路与江北路交界）</span><br>
+                <span>火车站（从酒店步行之深圳站大约19分钟）</span>
+            </p>
+            <p><span class="iconfont icon-dizhi-01"></span></p>
+        </div>
+
+
+        <div class="dl">
+            <div class="le">
+                <dl>
+                    <dt class="iconfont icon-WIFI"></dt>
+                    <dd>上网</dd>
+                </dl>
+                <dl>
+                    <dt class="iconfont icon-WIFI"></dt>
+                    <dd>上网</dd>
+                </dl>
+                <dl>
+                    <dt class="iconfont icon-WIFI"></dt>
+                    <dd>上网</dd>
+                </dl>
+                <dl>
+                    <dt class="iconfont icon-WIFI"></dt>
+                    <dd>上网</dd>
+                </dl>
+            </div>
+            <div class="ri">
+                <span>详情 ></span>
+            </div>
+        </div>
+
+
+        <div class="border">
+            <span>预定</span>
+            <span>预定成功后100%有房</span>
+        </div>
+
+        <div class="footer">
+            <p>
+                <span>自足大床</span><br>
+                <span>不含早 部分有窗</span><br>
+                <span>入住当天18点前免费取消</span>
+            </p>
+            <p>
+                <span>预定</span>
+            </p>
+        </div>
+        <div class="footer">
+            <p>
+                <span>自足大床</span><br>
+                <span>不含早 部分有窗</span><br>
+                <span>入住当天18点前免费取消</span>
+            </p>
+            <p>
+                <span>预定</span>
+            </p>
+        </div>
+
+    </div>
+</body>
+<script src="js/flexible.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script>
+    var canvas = document.querySelector("#canvas");
+    var ctx = canvas.getContext("2d");
+    ctx.translate(75, 75);
+    var deg = Math.PI / 180;
+    var init = 0;
+
+
+    function arc() {
+        ctx.clearRect(-75, -75, 150, 150);
+        init++;
+        ctx.beginPath();
+        if (init < 360) {
+            window.requestAnimationFrame(arc);
+        }
+        ctx.arc(0, 0, 60, 0, init * deg);
+        ctx.strokeStyle = "orange";
+        ctx.font = "30px norml";
+        ctx.textAlign = "center";
+        ctx.fillText("5分", 0, 0);
+        ctx.lineWidth = 10;
+        ctx.stroke();
+
+    }
+    arc();
+
+    $(".a").on("click", function() {
+        location.href = "index.html";
+    })
+</script>
+
+</html>
