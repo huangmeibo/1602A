@@ -1,0 +1,126 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 1rem;
+  background: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  font-size: .5rem;
+  font-family: "楷体";
+  color: #ccc;
+  text-decoration: none;
+}
+
+header a:nth-of-type(1) {
+  padding-left: .3rem;
+}
+
+header a:nth-of-type(2) {
+  padding-right: .3rem;
+}
+
+header b {
+  font-weight: normal;
+  font-size: .4rem;
+}
+
+section {
+  width: 100%;
+}
+
+section .main {
+  width: 100%;
+  background: #fff;
+}
+
+section .main .line {
+  width: 100%;
+  height: .28rem;
+  background: #eee;
+}
+
+section .main .dl {
+  width: 100%;
+  height: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+section .main .dl dt {
+  width: 1.2rem;
+  height: 1.2rem;
+  padding: 0 .3rem;
+}
+
+section .main .dl dt img {
+  width: 100%;
+  height: 100%;
+}
+
+section .main .dl dd {
+  font-size: .34rem;
+}
+
+section .main .top {
+  width: 100%;
+  background: #fff;
+}
+
+section .main .top dl {
+  width: 100%;
+  height: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+
+section .main .top dl dt {
+  width: .6rem;
+  height: .6rem;
+  line-height: .5rem;
+  padding-left: .3rem;
+}
+
+section .main .top dl dt img {
+  width: 100%;
+  height: 100%;
+}
+
+section .main .top dl dd {
+  flex: 1;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: .32rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding-left: .3rem;
+}
+
+section .main .top dl dd span {
+  font-family: "楷体";
+  padding-right: .3rem;
+}

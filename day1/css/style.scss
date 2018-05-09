@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+html,
+body,
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 1rem;
+    background: #fff;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+        font-size: .5rem;
+        font-family: "楷体";
+        color: #ccc;
+        text-decoration: none;
+        &:nth-of-type(1) {
+            padding-left: .3rem;
+        }
+        &:nth-of-type(2) {
+            padding-right: .3rem;
+        }
+    }
+    b {
+        font-weight: normal;
+        font-size: .4rem;
+    }
+}
+
+section {
+    width: 100%;
+    .main {
+        width: 100%;
+        background: #fff;
+        .line {
+            width: 100%;
+            height: .28rem;
+            background: #eee;
+        }
+        .dl {
+            width: 100%;
+            height: 1.5rem;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            dt {
+                width: 1.2rem;
+                height: 1.2rem;
+                padding: 0 .3rem;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            dd {
+                font-size: .34rem;
+            }
+        }
+        .top {
+            width: 100%;
+            background: #fff;
+            dl {
+                width: 100%;
+                height: 1.3rem;
+                display: flex;
+                align-items: center;
+                dt {
+                    width: .6rem;
+                    height: .6rem;
+                    line-height: .5rem;
+                    padding-left: .3rem;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                dd {
+                    flex: 1;
+                    height: 1.2rem;
+                    line-height: 1.2rem;
+                    font-size: .32rem;
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #ccc;
+                    padding-left: .3rem;
+                    span {
+                        font-family: "楷体";
+                        padding-right: .3rem;
+                    }
+                }
+            }
+        }
+    }
+}
