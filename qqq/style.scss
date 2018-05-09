@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: .3rem;
+    font-weight: normal;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 625%;
+    -webkit-user-select: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin num($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+%text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin flex($j:space-between) {
+    display: flex;
+    justify-content: $j;
+    align-items: center;
+}
+
+.wrap {
+    @include num(100%, 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    @include num(100%, 1.03rem);
+    background: #46D264;
+    @include flex();
+    padding: 0 .2rem;
+    a {
+        font-size: .29rem;
+        color: #fff;
+        flex-basis: 20%;
+    }
+    h2 {
+        font-size: .39rem;
+        color: #fff;
+    }
+}
+
+.banner {
+    @include num(100%, 2.9rem);
+    ul {
+        @include num(100%, 2.9rem);
+        li {
+            @include num(100%, 2.9rem);
+            img {
+                @include num(100%, 100%);
+            }
+        }
+    }
+    .swiper-scrollbar-drag {
+        background: #46D264;
+        height: .2rem;
+        border-radius: 0;
+    }
+}
+
+.main {
+    @include num(100%, 100%);
+    flex: 1;
+    overflow: hidden;
+    .li1 {
+        position: absolute;
+        top: -20px;
+        left: 0;
+    }
+    padding: 0 .2rem;
+    dl {
+        @include num(100%, 2.13rem);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        dt {
+            @include num(1.5rem, 1.5rem);
+            margin-right: .2rem;
+            img {
+                @include num(100%, 100%);
+            }
+        }
+        dd {
+            @include num(100%, 1.5rem);
+            flex: 1;
+            h2 {
+                font-size: .35rem;
+            }
+            h3 {
+                // @include num(100%, .4rem);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .s1 {
+                    @include num(1.3rem, .46rem);
+                    display: block;
+                    background: #FF9900;
+                    border-radius: 6px;
+                    text-align: center;
+                    line-height: .46rem;
+                    color: #fff;
+                }
+                .s2 {
+                    color: #FF9900;
+                }
+            }
+            h4 {
+                span {
+                    @include num(.3rem, .3rem);
+                    display: inline-block;
+                    img {
+                        @include num(100%, 100%);
+                    }
+                }
+                margin-right:.2rem;
+                color: #919191;
+            }
+            h5 {
+                display: flex;
+                justify-content: space-between;
+                color: #919191;
+            }
+        }
+    }
+}

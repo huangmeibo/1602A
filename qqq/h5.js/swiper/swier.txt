@@ -1,0 +1,22 @@
+引入文件
+ animate.css
+ swiper.css
+ swiper.js
+ swiper.animate.js
+
+swiper-animate-effect：切换效果，例如 fadeInUp 
+swiper-animate-duration：可选，动画持续时间（单位秒），例如 0.5s
+swiper-animate-delay：可选，动画延迟时间（单位秒），例如 0.3s
+class="ani"
+动画元素添加属性
+
+swiper4 
+组件拆分开
+增加this关键字指向
+1.当swiper初始化加载完成时 
+oninit
+    swiperAnimateCache(this) 隐藏所有的动画元素
+    swiperAnimate(this) 当前页面动画元素开始动画
+2.页面滑动
+onslideChangeTransitionStart || onslideChangeTransitionEnd
+    swiperAnimate(this) 当前页面动画元素开始动画
