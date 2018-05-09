@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html,
+body,
+.wrap {
+    width: 100%;
+    height: 100%;
+    font-size: .35rem;
+}
+
+.wrap {
+    background: #fff;
+    .header {
+        background: #46d264;
+        height: 1.05rem;
+        line-height: 1.05rem;
+        display: flex;
+        span {
+            color: #fff;
+            &:nth-child(1) {
+                flex: .4;
+                font-size: .3rem;
+            }
+            &:nth-child(2) {
+                flex: .6;
+                font-size: .45rem;
+            }
+        }
+    }
+    .banner {
+        height: 2.90rem;
+        padding-bottom: .3rem;
+        ul {
+            height: 100%;
+            li {
+                height: 100%;
+                img {
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .pages {
+            bottom: 0;
+            display: flex;
+            .swiper-pagination-bullet {
+                flex: 1;
+                height: .3rem;
+                display: inline-block;
+                background: #000;
+                opacity: .2;
+                border-radius: 0%;
+            }
+            .swiper-pagination-bullet-active {
+                opacity: 1;
+                background: green;
+            }
+        }
+    }
+    .section {
+        dl {
+            height: 2.4rem;
+            border-bottom: .001rem solid #000;
+            display: flex;
+            dt {
+                flex: .3;
+                line-height: .4rem;
+                img {
+                    display: inline-block;
+                    width: 1.87rem;
+                }
+            }
+            dd {
+                flex: .7;
+                display: flex;
+                span {
+                    &:nth-child(1) {
+                        flex: .9;
+                        h5 {
+                            font-size: .36rem;
+                        }
+                        p {
+                            span {
+                                background: orangered;
+                                color: #fff;
+                                margin-right: .5rem;
+                            }
+                            b {
+                                color: orangered;
+                            }
+                        }
+                    }
+                    &::nth-child(2) {
+                        flex: .1;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
