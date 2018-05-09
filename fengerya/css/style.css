@@ -1,0 +1,118 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "微软雅黑";
+  text-size-adjust: 100%; }
+
+ul, li {
+  list-style: none; }
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 62.5%; }
+
+img, div, body, html, ul, li, a {
+  -webkit-touch-callout: none; }
+
+input, button {
+  outline: 0; }
+
+button {
+  cursor: pointer; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #ccc; }
+
+input {
+  -webkit-appearance: none;
+  border: 0; }
+
+body, html, .wrap {
+  width: 100%;
+  height: 100%;
+  background: #eee; }
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative; }
+
+.header {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background: #0f0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99; }
+  .header p {
+    flex: 1;
+    margin: 0 10%;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    text-align: center; }
+
+.main {
+  width: 100%;
+  height: aoto;
+  flex: 1;
+  padding-top: 4rem;
+  overflow-y: scroll; }
+  .main .swipers {
+    width: 100%;
+    height: 15rem; }
+    .main .swipers img {
+      width: 100%;
+      height: 100%; }
+  .main .box {
+    background: #fff; }
+    .main .box dl {
+      display: flex;
+      margin: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #969896; }
+      .main .box dl dt {
+        width: 4rem;
+        height: 4rem;
+        margin: 1rem 1rem 0 0; }
+        .main .box dl dt img {
+          width: 100%;
+          height: 100%; }
+      .main .box dl dd {
+        flex: 1; }
+        .main .box dl dd ul {
+          display: flex;
+          justify-content: space-between; }
+          .main .box dl dd ul span, .main .box dl dd ul a, .main .box dl dd ul b, .main .box dl dd ul i {
+            display: block;
+            color: #000; }
+          .main .box dl dd ul span {
+            background: #f63;
+            width: 5rem;
+            color: #fff;
+            font-size: 1.2rem;
+            text-align: center; }
+          .main .box dl dd ul strong {
+            color: #f60;
+            font-weight: 700;
+            font-size: 1.6rem; }
+
+.footer {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between; }
+
+/*# sourceMappingURL=style.css.map */
