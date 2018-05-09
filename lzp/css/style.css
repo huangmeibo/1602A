@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body,
+html,
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: .16rem;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  height: 1rem;
+  position: relative;
+  background: #46d264;
+}
+
+header span {
+  position: absolute;
+  left: .4rem;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #fff;
+  font-size: .26rem;
+}
+
+header h2 {
+  width: 100%;
+  height: 100%;
+  font-size: .46rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1rem;
+  font-weight: 400;
+}
+
+.banner {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  height: auto;
+}
+
+.banner .pic img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+section {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+section .scroll {
+  width: 100%;
+  height: auto;
+}
+
+section .scroll .list {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: .2rem;
+}
+
+section .scroll .list dl {
+  flex: 1;
+  display: flex;
+}
+
+section .scroll .list dl dt {
+  width: 32%;
+  margin-right: .2rem;
+}
+
+section .scroll .list dl dt img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: .2rem;
+  box-sizing: border-box;
+}
+
+section .scroll .list dl dd {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+section .scroll .list dl dd h2 {
+  font-size: .36rem;
+  font-weight: 500;
+  margin-bottom: .1rem;
+}
+
+section .scroll .list dl dd .one {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .1rem;
+}
+
+section .scroll .list dl dd .one > span {
+  padding: .1rem;
+  color: #fff;
+  background: #ff9900;
+  border-radius: 2px;
+}
+
+section .scroll .list dl dd .one > em {
+  font-size: .38rem;
+  font-style: normal;
+  font-weight: 600;
+  color: #ff9900;
+}
+
+section .scroll .list dl dd .one > em i {
+  font-style: normal;
+  font-size: .3rem;
+  color: #666;
+}
+
+section .scroll .list dl dd .two {
+  font-size: .3rem;
+  color: #666;
+  margin-bottom: .1rem;
+}
+
+section .scroll .list dl dd .three {
+  font-size: .3rem;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+}
+
+section .scroll .list > span {
+  font-size: .6rem;
+  margin-left: .1rem;
+}
