@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper-4.2.2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <span>北京</span>
+            <span class="span">假日旅行</span>
+            <span class="right">北京</span>
+        </header>
+        <section>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/3.png" alt=""></div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="box">
+                <dl>
+                    <dt><img src="img/dt1.png" alt=""></dt>
+                    <dd>
+                        <h3>北京首都机场国际酒店</h3>
+                        <p><em>限时抢购</em><b>￥268</b></p>
+                        <p><span>4.3分</span><span>四星级</span><span>P</span></p>
+                        <p><span>首都机场 新国展</span><span class="fl">23.2公里</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/dt2.png" alt=""></dt>
+                    <dd>
+                        <h3>北京亚奥国际酒店</h3>
+                        <p><em>限时抢购</em><b>￥398</b></p>
+                        <p><span>4.5分</span><span>四星级</span><span>P</span></p>
+                        <p><span>首都机场 新国展 海淀区</span><span class="fl">23.2公里</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/dt3.png" alt=""></dt>
+                    <dd>
+                        <h3>北京首都机场国际酒店</h3>
+                        <p><em>限时抢购</em><b>￥456</b></p>
+                        <p><span>4.9分</span><span>四星级</span><span>P</span></p>
+                        <p><span>国际酒店 首都机场 新国展</span><span class="fl">24.2公里</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/dt3.png" alt=""></dt>
+                    <dd>
+                        <h3>北京首都机场国际酒店</h3>
+                        <p><em>限时抢购</em><b>￥456</b></p>
+                        <p><span>4.9分</span><span>四星级</span><span>P</span></p>
+                        <p><span>国际酒店 首都机场 新国展</span><span class="fl">24.2公里</span></p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/dt3.png" alt=""></dt>
+                    <dd>
+                        <h3>北京首都机场国际酒店</h3>
+                        <p><em>限时抢购</em><b>￥456</b></p>
+                        <p><span>4.9分</span><span>四星级</span><span>P</span></p>
+                        <p><span>国际酒店 首都机场 新国展</span><span class="fl">24.2公里</span></p>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="js/swiper-4.2.2.min.js"></script>
+<script>
+    document.documentElement.style.fontSize = window.innerWidth / 10 + "px";
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: {
+            delay: 2000
+        },
+        loop: true,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    })
+</script>
+
+</html>
