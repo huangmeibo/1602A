@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+html,
+body,
+.wrap {
+  height: 100%;
+  width: 100%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  font-size: .3rem;
+}
+
+.wrap .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .2rem;
+  background: #46d264;
+  line-height: 1rem;
+  color: #fff;
+}
+
+.wrap .header span:nth-child(2) {
+  font-size: .5rem;
+}
+
+.wrap .main {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.wrap .main .swiper1 {
+  padding-bottom: .2rem;
+}
+
+.wrap .main .swiper1 img {
+  width: 100%;
+  display: block;
+}
+
+.wrap .main .swiper1 .page {
+  bottom: 0;
+  padding: 0;
+  height: .2rem;
+  display: flex;
+}
+
+.wrap .main .swiper1 .page .swiper-pagination-bullet {
+  margin: 0;
+  border-radius: 0;
+  flex: 1;
+  height: .2rem;
+  background: #cccccc;
+  opacity: 1;
+}
+
+.wrap .main .swiper1 .page .swiper-pagination-bullet-active {
+  background: #33cc66;
+}
+
+.wrap .main > ul > li {
+  padding-top: .2rem;
+  border-bottom: solid .02rem #ccc;
+}
+
+.wrap .main > ul > li dl {
+  display: flex;
+}
+
+.wrap .main > ul > li dl dt {
+  flex: 1;
+  padding: .2rem;
+}
+
+.wrap .main > ul > li dl dt img {
+  width: 100%;
+}
+
+.wrap .main > ul > li dl dd {
+  flex: 4;
+}
+
+.wrap .main > ul > li dl dd p span {
+  color: orange;
+}
