@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body,
+html,
+.wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap .header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 0.8rem;
+  background: seagreen;
+  line-height: 0.8rem;
+  color: #fff;
+  padding-left: 0.2rem;
+}
+
+.wrap .header h2 {
+  font-size: 0.4rem;
+}
+
+.wrap .main {
+  flex: 1;
+  width: 100%;
+}
+
+.wrap .main img {
+  width: 100%;
+}
+
+.wrap .main dl {
+  display: flex;
+  padding-left: 0.5rem;
+  padding-top: 0.3rem;
+}
+
+.wrap .main dl dt img {
+  width: 100px;
+}
+
+.wrap .main dl dd {
+  padding-left: 0.2rem;
+}
+
+.wrap .main dl dd h2 {
+  font-size: 0.4rem;
+}
+
+.wrap .main dl dd p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap .main dl dd p span {
+  background: sandybrown;
+  color: #fff;
+}
+
+.wrap .main dl dd p b {
+  color: sandybrown;
+}
+
+.wrap .main dl dd p b em {
+  color: #000;
+}

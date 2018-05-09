@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+    <title>Document</title>
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
+    </script>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <span>北京</span>
+            <h2>假日旅行</h2>
+            <span></span>
+        </header>
+        <main class="main ">
+            <div class="banner swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <dl>
+                <dt>
+                    <img src="img/2.png" alt="">
+                 </dt>
+                <dd>
+                    <h2> 北京首都机场国际酒店</h2>
+                    <p><span> 限时抢购</span><span></span><b>￥268<em>起</em ></b></p>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                        <img src="img/3.png" alt="">
+                     </dt>
+                <dd>
+                    <h2>北京首都机场国际酒店</h2>
+                    <p><span> 限时抢购</span><span></span><b>￥268<em>起</em ></b></p>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                            <img src="img/4.png" alt="">
+                         </dt>
+                <dd>
+                    <h2>北京首都机场国际酒店</h2>
+                    <p><span> 限时抢购</span><span></span><b>￥268<em>起</em ></b></p>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                                <img src="img/5.png" alt="">
+                             </dt>
+                <dd>
+                    <h2>北京首都机场国际酒店</h2>
+                    <p><span> 限时抢购</span><span></span><b>￥268<em>起</em ></b></p>
+                </dd>
+            </dl>
+        </main>
+    </div>
+    <script src="js/swiper-3.4.2.min.js"></script>
+    <script src="js/rem.js"></script>
+    <script>
+        var myswiper = new Swiper('.banner', {
+            loop: true,
+            autoplay: 2000
+        })
+    </script>
+</body>
+
+</html>
